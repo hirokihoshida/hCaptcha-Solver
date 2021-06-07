@@ -1,0 +1,26 @@
+{
+    "name": "hCaptcha Solver",
+    "description": "Solves hCaptchas",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["solver.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}

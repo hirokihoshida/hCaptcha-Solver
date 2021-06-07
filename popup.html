@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-3">
+        <form>
+            <div class="row mt-3">
+                <h1 class="text-center">Captcha Solver</h1>
+            </div>
+            <div class="row mt-3">       
+                <div class="col-10 mx-auto">
+                    <input type="text" class="form-control" id="apiKey" placeholder="2Captcha API Key">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-10 mx-auto d-grid">
+                    <button type="button" class="btn btn-primary" id="setKeyButton">Set Key</button>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-10 mx-auto d-grid">
+                    <button type="button" class="btn btn-success" id="enabledButton">Enabled?</button>
+                </div>
+            </div>
+            
+        </form>
+        
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>
