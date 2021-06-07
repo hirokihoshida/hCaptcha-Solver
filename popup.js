@@ -4,7 +4,7 @@ let enabledButton = document.getElementById("enabledButton");
 window.onload = function () {
   //set 2captcha api textbox with storage value
   chrome.storage.sync.get(['apiKey'], function (result) {
-    if (result.apiKey){
+    if (result.apiKey) {
       document.getElementById("apiKey").value = result.apiKey;
     }
   });
