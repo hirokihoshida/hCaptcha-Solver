@@ -1,4 +1,4 @@
-# hCaptcha-Solver
+# hCaptcha Solver Chrome Extension
 Chrome extension to automatically solve hCaptcha captchas using 2Captcha.
 
 Set the 2Captcha API key in the popup window, then turn on.
