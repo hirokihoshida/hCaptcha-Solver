@@ -4,7 +4,9 @@ let enabledButton = document.getElementById("enabledButton");
 window.onload = function () {
   //set 2captcha api textbox with storage value
   chrome.storage.sync.get(['apiKey'], function (result) {
-    document.getElementById("apiKey").value = result.apiKey;
+    if (result.apiKey){
+      document.getElementById("apiKey").value = result.apiKey;
+    }
   });
   //if enabled, turn button red
   //if disabled, turn button green
